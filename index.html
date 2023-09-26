@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biolan-Lucian-Demo</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:300'>
+  </head>
+  <body>
+    <!-- <div><video id="leon" autoplay muted>
+      <source src="/components/lion.mp4" type="video/mp4">
+    </video></div> -->
+    <div class="progress-bar-container">
+      <label for="progress-bar">Loading...</label>
+      <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+    <div>
+      <video id="melodieSpeciala" loop crossorigin="anonymous" playsinline style="display: none" src="/components/videoclip2.mp4" ></video>
+    </div>
+    
+    
+    <div class="tutorial" tabindex="0">
+      <div class="window__title-bar">
+        <div class="window__title">
+          About Us
+        </div>
+        <button class="window__btn" id="closeButton">
+          &times;
+          <span></span>
+        </button>
+      </div>
+
+      <div class="window__body">
+      <h1 class="window__subtitle">Welcome to TalkieHop! ✨</h1>
+      <p>Welcome to the exciting world of my 3D CV application! I am Biolan Lucian, the developer and creator of this unique experience. My CV app is not just a simple digital portfolio but also an interactive game that allows you to explore and interact with my portfolio elements in a fun and engaging way.</p>
+      <h2>Get Started</h2>
+      <p>
+        <b>Start the game</b>: To begin, press the <b>'Start'</b> button
+      </p>
+        <p>
+          <b>Camera control</b>: Use the <b>left mouse button</b> to rotate the camera around the characters and objects.
+          <img width="40px" src="/images/left-click.png" alt="left-click">
+          <br>
+          With the <b>right mouse button</b>, you can move the camera left or right to view details from different angles.
+          <img width="40px" src="/images/right-click.png" alt="right-click">
+        </p>
+        <p>
+          <b>Zoom in and Zoom out</b>: Use the <b>mouse scroll wheel</b> to zoom in or zoom out for a more detailed exploration.
+          <img width="40px" src="/images/scroll.png" alt="scroll">
+        </p>
+        <p class="underline-text">
+          <b>Move through the 3D scene and search for the hidden geometric shapes.</b>
+          <img src="/images/cuburi.png" alt="cuburi">
+        </p>
+        <p>PS - Don't forget to turn up the volume!</p>
+    </div>
+
+    <div class="window__status-bar">
+      <img width="20px" src="/images/linkedin-icon.png" alt="Linkedin">
+      <a href="https://www.linkedin.com/in/biolan-lucian" target="_blank">linkedin.com/in/biolan-lucian</a>
+    </div>
+  </div>
+
+
+    <div>
+      <canvas class="webgl"></canvas>
+    </div>
+    <button class="toggle-button">
+      <div class="toggle-circle"></div>
+      <div class="toggle-text">Light Mode</div>
+    </button>
+    <button id="animate-button">START</button>
+
+    <div id="numar-obiecte">0/8</div>
+
+    <div id="panel" class="panel-dialog">
+      <div id="panel-inner">
+        <p id="panel-title">Panel title</p>
+        <p id="panel-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae necessitatibus dignissimos, fuga quod eveniet adipisci sed quam asperiores corrupti suscipit, vero nostrum et inventore nulla iusto voluptate accusamus iure modi eius ab? Hic illo rem tenetur dolore corporis a architecto dolorem reprehenderit ipsum harum quaerat, alias ex officia beatae maxime accusantium eius.</p>
+      </div>
+    </div>
+
+    <div id="win">
+      <img id="win-game" src="/images/win.png" alt="win-game">
+      <div id="social-media">
+        <h2>Contact Me At:</h2>
+      <div><a href="https://www.instagram.com/luciangrrr/" target="_blank"><img src="/images/instagram-icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/biolan-lucian" target="_blank"><img src="/images/linkedin-icon.png" alt="Linkedin"></a>
+        <a href="mailto:luciangrr@gmail.com" target="_blank"><img src="/images/mail-icon.png" alt="Email"></a></div>
+      </div>
+    </div>  
+    </div>
+    
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="components/panel.js"></script>
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
