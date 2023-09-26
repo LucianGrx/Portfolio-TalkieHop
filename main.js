@@ -4,6 +4,7 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import gsap from "gsap";
+import $ from 'jquery'
 
 let mixer, mixer2, cosmog, pika,sobble, mixer3, skeleton, bulbasaur, lucario, stickman, mixer4;
 const panelText = $('#panel-text');
